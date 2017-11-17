@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Food Line App</title>
+   <link href="style.css" />
+</head>
+<body>
+ <h1>Food Line App</h1>
+ <p>
+     Currently Feasting Student:
+     <span id="eating"></span>
+ </p>
+ <p>
+   How many students in line:
+   <span id="line-length"></span>
+ </p>
+ <p>Up Next: <span id="next-student"></span></p>
+   <button onclick={takeOffFirstInLine()}>
+       Give Food to First in Line
+   </button>
+   <button onclick={pickRandomStudent()}>
+       Random Student
+   </button>
+   <button onclick={letSomeoneCut()}>
+       Let someone cut
+   </button>
+   <button onclick={putSomeoneAtTheEndOfLine()}>
+       add someone to end of line
+   </button>
+   <span id = 'students'></span>
+   <script src="script.js"></script>
+</body>
+</html>
